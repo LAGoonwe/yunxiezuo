@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world!</title>
+    <!-- zui -->
+    <link href="css/zui.css" rel="stylesheet">
+    <link href="lib/tabs/zui.tabs.css" rel="stylesheet">
+    <style type="text/css">
+        #container {
+            display: flex;
+            min-height: 100vh;
+            width: 300px;
+            flex-direction: column;
+            background-color: #dedede
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="height: 40px">
+    <div class="container-fluid">
+        <!-- 导航头部 -->
+        <div class="navbar-header">
+            <!-- 移动设备上的导航切换按钮 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-example">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 品牌名称或logo -->
+            <a class="navbar-brand" href="your/nice/url">WKla云协作</a>
+        </div>
+        <!-- 导航项目 -->
+        <div class="collapse navbar-collapse navbar-collapse-example">
+            <!-- 一般导航项目 -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="your/nice/url">主页</a></li>
+                <li><a href="your/nice/url">在线协作</a></li>
+                <!-- 导航中的下拉菜单 -->
+                <li>
+                    <a href="your/nice/url">在线沟通</a>
+                </li>
+            </ul>
+            <!-- 右侧的导航项目 -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="your/nice/url">帮助</a></li>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </ul>
+        </div><!-- END .navbar-collapse -->
+    </div>
+</nav>
+
+<div id="container">
+    <div class="panel-group" id="accordionPanels" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" id="headingOne">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordionPanels" href="#collapseOne">
+                        好友列表
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">好友1</h4>
+                            <p class="list-group-item-text text-muted">共12个新条目</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">好友2</h4>
+                            <p class="list-group-item-text text-muted">没有未处理的bug</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">好友3</h4>
+                            <p class="list-group-item-text text-muted"># 处理bug</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPanels" href="#collapseTwo">
+                        讨论组列表
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">讨论组1</h4>
+                            <p class="list-group-item-text text-muted">共12个新条目</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">讨论组2</h4>
+                            <p class="list-group-item-text text-muted">没有未处理的bug</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">讨论组3</h4>
+                            <p class="list-group-item-text text-muted"># 处理bug</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPanels" href="#collapseThree">
+                        笔记/待办
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">用div >项目</a>
+                        <a href="#" class="list-group-item">待办</a>
+                        <a href="#" class="list-group-item">需求</a>
+                        <a href="#" class="list-group-item active">任务</a>
+                        <a href="#" class="list-group-item">Bug</a>
+                        <a href="#" class="list-group-item">用例</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery/jquery.js"></script>
+<!-- ZUI Javascript组件 -->
+<script src="js/zui.js"></script>
+<div style="margin-left:320px;width: 75%;margin-top: -969px;flex-direction: column;display: flex;
+            min-height: 100vh;">
+<script src="lib/tabs/zui.tabs.js"></script>
+    <link href="lib/tabs/zui.tabs.css" rel="stylesheet">
+    <div id="myTabs" class="tabs">
+        <nav class="tabs-navbar"></nav>
+        <nav class="tabs-container" style="height: 800px"></nav>
+    </div>
+    <script>
+        $('.list-group-item').click(function () {
+            // 获取标签页管理器对象实例
+            // 要打开的标签页对象
+            var myTab = {
+                url: 'chat.html',
+                type: 'iframe',
+                defaultTitle: '聊天窗口一'
+            };
+            // 初始化标签页管理器;
+            // 打开标签页
+            $('#myTabs').tabs().data('zui.tabs').open(myTab);
+        })
+    </script>
+</div>
+<!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+</body>
+</html>
